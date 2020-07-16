@@ -1,0 +1,136 @@
+,::*before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  margin: 5px;
+  font-family: DJB Stinky Marker;
+  color: rgb(223, 182, 188);
+  text-shadow: 0 1px #ff005b;
+}
+
+.flower {
+  width: 280px;
+  height: 100px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 50px;
+  margin-top: 150px;
+}
+
+.flower::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  background: hotpink;
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower::after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 100px;
+  background: hotpink;
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.lefteye {
+  width: 20px;
+  height: 27px;
+  border: solid 1px #b37493;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+  left: 95px;
+  top: -90px;
+  background-color: lightgrey;
+}
+
+.righteye {
+  width: 20px;
+  height: 27px;
+  border: solid 1px #b37493;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+  left: 155px;
+  top: -119px;
+  background-color: lightgrey;
+}
+
+#inner-left {
+  width: 0.6rem;
+  height: 0.7rem;
+  border: solid 1px rgb(100, 96, 96);
+  border-radius: 50px;
+  position: relative;
+  left: 0.35rem;
+  top: 10px;
+  background-color: grey;
+}
+
+#inner-right {
+  width: 0.6rem;
+  height: 0.7rem;
+  border: solid 1px rgb(100, 96, 96);
+  border-radius: 50px;
+  position: relative;
+  left: 0.31rem;
+  top: 10px;
+  background-color: grey;
+}
+
+.mouth {
+  position: relative;
+  border-radius: 50px;
+  border: solid 1px #5681a3;
+  bottom: 75px;
+  left: 116px;
+  background: #539dda;
+  width: 3rem;
+  height: 1.55rem;
+  z-index: 0.5;
+}
+
+.tongue {
+  position: relative;
+  border-radius: 1.2rem;
+  border: solid 1px rgb(206, 112, 112);
+  bottom: -5.76rem;
+  left: -9.86rem;
+  background: linear-gradient(-20deg, #e73c7e, #ee7752);
+  width: 1.59rem;
+  height: 0.34rem;
+  z-index: 0.6;
+}
+
+p.speech {
+  position: relative;
+  width: 200px;
+  height: 5.6rem;
+  text-align: center;
+  line-height: 100px;
+  background-color: rgb(228, 207, 227);
+  border: 8px solid rgb(204, 96, 137);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+p.speech {
+  font-family: DJB Stinky Marker;
+  color: rgb(56, 55, 55);
+}
